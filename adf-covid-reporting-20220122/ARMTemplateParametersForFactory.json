@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-covid-reporting-20220122"
+		},
+		"ls_adls_covidreportingsa_accountKey": {
+			"value": ""
+		},
+		"ls_blob_covidreportingsa_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covidreportingsa_properties_typeProperties_url": {
+			"value": "https://covidreporting2022dl.dfs.core.windows.net"
+		}
+	}
+}
