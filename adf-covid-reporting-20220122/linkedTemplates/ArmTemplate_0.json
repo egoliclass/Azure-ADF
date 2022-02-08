@@ -123,7 +123,14 @@
 					{
 						"name": "Copy population data",
 						"type": "Copy",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "Check if file Exists",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.00:05:00",
 							"retry": 0,
@@ -179,6 +186,22 @@
 								"parameters": {}
 							}
 						]
+					},
+					{
+						"name": "Check if file Exists",
+						"type": "Validation",
+						"dependsOn": [],
+						"userProperties": [],
+						"typeProperties": {
+							"dataset": {
+								"referenceName": "ds_population_raw_gz",
+								"type": "DatasetReference",
+								"parameters": {}
+							},
+							"timeout": "0.00:02:00",
+							"sleep": 10,
+							"minimumSize": 1024
+						}
 					}
 				],
 				"policy": {
