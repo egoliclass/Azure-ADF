@@ -30,6 +30,10 @@
 		"ssisIRdemo_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
 			"type": "secureString"
 		},
+		"tr-ingest-population_data_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/e47a815c-3d31-4925-97fb-52f47048e715/resourceGroups/rg-covid-reporting/providers/Microsoft.Storage/storageAccounts/covidreporting2022sa"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -74,6 +78,9 @@
 					},
 					"ssisIRdemo_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
 						"value": "[parameters('ssisIRdemo_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword')]"
+					},
+					"tr-ingest-population_data_properties_typeProperties_scope": {
+						"value": "[parameters('tr-ingest-population_data_properties_typeProperties_scope')]"
 					}
 				}
 			},

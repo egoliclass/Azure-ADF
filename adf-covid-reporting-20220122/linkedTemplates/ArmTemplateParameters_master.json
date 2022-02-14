@@ -23,6 +23,9 @@
 		"ssisIRdemo_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
 			"value": ""
 		},
+		"tr-ingest-population_data_properties_typeProperties_scope": {
+			"value": "/subscriptions/e47a815c-3d31-4925-97fb-52f47048e715/resourceGroups/rg-covid-reporting/providers/Microsoft.Storage/storageAccounts/covidreporting2022sa"
+		},
 		"containerUri": {
 			"value": ""
 		},
